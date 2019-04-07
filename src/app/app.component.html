@@ -1,0 +1,47 @@
+<h2> Hello Oktenweb! </h2>
+
+<!--<div>-->
+  <!--<button (click)="login()">Login Process</button>-->
+<!--</div>-->
+
+<div class="asd">
+  <h3>{{responseGet}}</h3>
+  <button (click)="getInfo()">Get it</button>
+</div>
+
+<div>
+  <h2>LOGINATION</h2>
+  <h3>{{responseLogIn}}</h3>
+  <form  #formLogin>
+
+    <input  [(ngModel)]="formLogInObj.login" type="text"
+
+            name="Login" placeholder="login">
+
+    <input [(ngModel)]="formLogInObj.password" type="text"
+
+           name="password" placeholder="password">
+
+    <button  (click)="logInto(formLogin)" type="button">Log In</button>
+
+  </form>
+</div>
+<div>
+  <h2>REGISTRATION</h2>
+  <h3>{{responseRegistration}}</h3>
+
+  <form  #formRegistr>
+
+    <input  [(ngModel)]="formRegistrObj.login" type="text"
+
+            name="Login" placeholder="login">
+
+    <input [(ngModel)]="formRegistrObj.password" type="text"
+
+           name="password" placeholder="password">
+
+    <button  (click)="registrate(formRegistr)" type="button">Sign In</button>
+
+  </form>
+</div>
+
